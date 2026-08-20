@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="epoch.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="epoch.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OutSystems.ExternalLibraries.SDK" Version="1.5.0" />
+  </ItemGroup>
+
+</Project>
